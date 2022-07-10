@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>与我联系</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="contact.js"></script>
+</head>
+
+
+<div class="body">
+
+    <body style="background-image: url(../imgs/lattice_bg.jpg);">
+        <table style="width:100%;">
+            <div class="nav">
+                <tr class="title">
+                    <th>
+                        <header>
+                            <h1><a href="homePage.html">Yu's Blog</a></h1>
+                            <h2>与我联系</h2>
+                        </header>
+                    </th>
+                    <th>
+                        <nav>
+                            <a href="subPageIntroduceMyself.html">自己紹介| </a>
+                            <a href="subPageHobby.html">私の興味| </a>
+                            <a href="subPagePhoto.html">私の写真| </a>
+                            <a href="subPageMessageBoard.html">メッセージ| </a>
+                            <a href="subPageContact.html">お問い合わせ</a>
+                        </nav>
+                    </th>
+                </tr>
+            </div>
+            <tr>
+                <th>
+                    <ul>
+                        <form action="hw1_ling.html">
+                            <label for="name">お名前:</label><br>
+                            <input type="text" placeholder="ひらがな" id="name">
+                            <br>
+                            <label for="email">メールアドレス:</label><br>
+                            <input type="email" id="email" placeholder="@gmail.com"><br>
+                            <label for="tel">お電話:</label><br>
+                            <input type="tel" id="tel" placeholder="ハイフンなし11桁数字"><br>
+                            <button type="button" class="btn btn-primary" id="btn">電話番号チェック</button>
+
+                            <script>
+                                function numDigits(num) {
+                                    return num.toString().length;
+                                }
+                                function p() {
+                                    if ( numDigits(form.value) = 10) {
+                                        return oK;
+                                    }
+                                    return no;
+                                }
+                            </script><br>
+                            <label for="text">ご質問内容:</label><br>
+                            <textarea id="text" placeholder="２００字以内"></textarea><br>
+                            <br>
+                            <div href="subPageContact.html"><input id="button1" type="submit" value="提出"></div>
+                            <script>
+                                document.getElementById("button1").addEventListener("click", function () {
+                                    window.alert("提出完了");
+                                });
+                            </script>
+                        </form>
+                    </ul>
+                </th>
+
+            </tr>
+            <tr>
+                <th>
+                    <footer>
+                        <p>于再浩</p>
+                        <p>联系方式:</p>
+                        <p>yuzaihao1234@gmail.com</p>
+                        <p>现在地：</p>
+                        <p>日本 </p>
+                    </footer>
+                </th>
+            </tr>
+        </table>
+    </body>
+</div>
+
+</html>
